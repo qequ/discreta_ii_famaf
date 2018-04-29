@@ -3185,7 +3185,7 @@ Tenemos que decidir si hay matching perfecto o no un cierto número de veces. ¿
 	\item Luego hay que extender el matching. Para extenderlo en un lado, hay que revisar todas las filas y todas las columnas ($O(n^2)$). Para extenderlo hasta un matching perfecto (o certificar que no hay) hay que repetir lo anterior $O(n)$ veces. Por lo tanto, esta parte tiene su complejidad en $O(n^3)$.
 \end{enumerate}
 
-Entonces, decidir si existe matching perfecto tiene complejidad en $O(n^2) + O(n^3) = O(n^2)$.
+Entonces, decidir si existe matching perfecto tiene complejidad en $O(n^2) + O(n^3) = O(n^3)$.
 
 ¿Cuántas veces se realiza esta operación? Si implementamos la estrategia de hacer búsqueda binaria en los $O(n)$ posibles valores distintos, tendremos que hacerlo $O(\log(n^2)) = O(2\log(n)) = O(\log(n))$ veces.
 
